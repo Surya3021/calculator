@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* dark gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    background-color: #f7f7f7; /* light gray background */
+}
+
+#display {
+    width: 95%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(177, 20, 20, 0.1); /* subtle shadow */
+    background-color: #fff; /* white background */
+    color: #333; /* dark gray text */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50; /* green background */
+    color: #fff; /* white text */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* smooth transition */
+}
+
+button:hover {
+    background-color: #3e8e41; /* darker green on hover */
+}
+
+button:active {
+    background-color: #3e8e41; /* darker green on active */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* subtle shadow on active */
+}
+
+button.operator {
+    background-color: #ff9800; /* orange background for operators */
+}
+
+button.operator:hover {
+    background-color: #ff7f00; /* darker orange on hover for operators */
+}
+
+button.operator:active {
+    background-color: #ff7f00; /* darker orange on active for operators */
+}
